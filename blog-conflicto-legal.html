@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu primer conflicto legal: qué hacer y cómo resolverlo | Romina Cucarese Abogada</title>
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blog-hero { background: var(--black); padding: 120px 0 60px; }
+    .blog-hero .container { max-width: 900px; }
+    .blog-breadcrumb { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 20px; }
+    .blog-breadcrumb a { color: var(--gold); text-decoration: none; }
+    .blog-hero h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px); font-weight: 700; color: var(--white); line-height: 1.3; margin-bottom: 20px; }
+    .blog-meta { display: flex; gap: 20px; font-size: 14px; color: rgba(255,255,255,0.5); }
+    .blog-meta span { display: flex; align-items: center; gap: 8px; }
+    .blog-meta i { color: var(--gold); }
+    
+    .blog-image { margin: -30px auto 0; max-width: 900px; padding: 0 20px; }
+    .blog-image img { width: 100%; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    
+    .blog-content { background: var(--white); padding: 60px 0 80px; }
+    .blog-content .container { max-width: 750px; }
+    .blog-content p { font-size: 17px; color: var(--text-body); line-height: 1.9; margin-bottom: 25px; }
+    .blog-content h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--text-dark); margin: 50px 0 20px; }
+    .blog-content h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-dark); margin: 40px 0 15px; }
+    .blog-content ul { margin: 20px 0 30px 20px; }
+    .blog-content li { font-size: 16px; color: var(--text-body); line-height: 1.8; margin-bottom: 10px; position: relative; padding-left: 25px; }
+    .blog-content li::before { content: ''; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; }
+    .blog-content strong { color: var(--text-dark); }
+    .blog-content .highlight { background: var(--off-white); border-left: 4px solid var(--gold); padding: 25px 30px; margin: 30px 0; border-radius: 0 12px 12px 0; }
+    .blog-content .highlight p { margin-bottom: 0; font-style: italic; }
+    
+    .blog-cta { background: var(--black); padding: 60px 0; text-align: center; }
+    .blog-cta .container { max-width: 600px; }
+    .blog-cta h2 { font-family: var(--font-display); font-size: 32px; font-weight: 600; color: var(--white); margin-bottom: 15px; }
+    .blog-cta p { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 30px; line-height: 1.7; }
+    .blog-cta .cta-features { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
+    .blog-cta .cta-feature { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255,255,255,0.8); }
+    .blog-cta .cta-feature i { color: var(--gold); }
+    
+    @media (max-width: 768px) {
+      .blog-hero { padding: 100px 0 40px; }
+      .blog-meta { flex-direction: column; gap: 10px; }
+      .blog-content h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo-header.png" alt="Romina Cucarese Abogada">
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#nosotros">Sobre</a>
+        <a href="index.html#noticias" class="active">Noticias</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <a href="https://wa.me/5491132029063" target="_blank" class="btn-primary header-cta">
+        <i class="fa fa-whatsapp"></i> Consulta Gratuita
+      </a>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BLOG HERO ===== -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="blog-breadcrumb">
+        <a href="index.html">Inicio</a> / <a href="index.html#noticias">Novedades</a> / Blog
+      </div>
+      <h1>Tu primer conflicto legal: qué hacer y cómo resolverlo de principio a fin</h1>
+      <div class="blog-meta">
+        <span><i class="fa fa-calendar"></i> Marzo 2026</span>
+        <span><i class="fa fa-clock-o"></i> 8 min de lectura</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG IMAGE ===== -->
+  <div class="blog-image">
+    <img src="images/noticia-blog.webp" alt="Conflicto legal">
+  </div>
+
+  <!-- ===== BLOG CONTENT ===== -->
+  <section class="blog-content">
+    <div class="container">
+      <p>Los problemas legales no avisan. Pueden aparecer de un día para el otro: un despido, un accidente, una deuda, un conflicto familiar o una disputa comercial. Lo que empieza como una preocupación, muchas veces termina en un proceso largo si no se actúa a tiempo.</p>
+      
+      <p>En esta guía te explicamos cómo funciona un proceso legal completo, qué esperar en cada etapa y, sobre todo, cómo resolverlo de forma rápida y efectiva.</p>
+
+      <h2>⚖️ ¿Cuándo comienza un conflicto legal?</h2>
+      <p>Un conflicto legal empieza cuando sentís que un derecho fue vulnerado. Algunos ejemplos frecuentes:</p>
+      <ul>
+        <li>Despidos o problemas laborales</li>
+        <li>Separaciones, alimentos o herencias</li>
+        <li>Deudas o incumplimientos de contrato</li>
+        <li>Accidentes o daños</li>
+        <li>Problemas con propiedades</li>
+      </ul>
+      
+      <div class="highlight">
+        <p>En este punto, no actuar o hacerlo mal puede empeorar la situación.</p>
+      </div>
+
+      <h2>🧑‍⚖️ La primera decisión: consultar a tiempo</h2>
+      <p>El primer paso no es demandar. Es entender tu situación.</p>
+      <p>Un abogado va a analizar:</p>
+      <ul>
+        <li>Si realmente tenés un reclamo válido</li>
+        <li>Qué pruebas tenés</li>
+        <li>Qué posibilidades de éxito existen</li>
+        <li>Qué estrategia conviene seguir</li>
+      </ul>
+      
+      <div class="highlight">
+        <p>Muchas veces, una buena decisión en esta etapa evita meses o años de conflicto.</p>
+      </div>
+
+      <h2>🤝 ¿Se puede evitar el juicio?</h2>
+      <p>Sí. Y en muchos casos, es lo más conveniente.</p>
+      <p>Antes de iniciar un juicio, existen instancias como:</p>
+      <ul>
+        <li>Carta documento</li>
+        <li>Negociaciones</li>
+        <li>Mediaciones obligatorias</li>
+      </ul>
+      <p>Son más rápidas, menos costosas y menos desgastantes. <strong>Un buen asesoramiento puede lograr un acuerdo favorable sin llegar a juicio.</strong></p>
+
+      <h2>📄 ¿Qué pasa si el conflicto llega a juicio?</h2>
+      <p>Cuando no hay acuerdo, comienza el proceso judicial.</p>
+      
+      <h3>Etapas principales:</h3>
+      
+      <p><strong>1. Demanda</strong><br>Se inicia formalmente el reclamo ante un juez.</p>
+      
+      <p><strong>2. Respuesta de la otra parte</strong><br>El demandado contesta y plantea su defensa.</p>
+      
+      <p><strong>3. Pruebas</strong><br>Se presentan documentos, testigos y pericias (médicas, contables, etc.). Esta etapa es clave: las pruebas definen el resultado.</p>
+      
+      <p><strong>4. Audiencias</strong><br>Se exponen argumentos y, a veces, se intenta nuevamente un acuerdo.</p>
+      
+      <p><strong>5. Sentencia</strong><br>El juez toma una decisión: puede darte la razón, puede rechazar el reclamo, o puede establecer responsabilidades compartidas.</p>
+
+      <h2>⏳ ¿Termina ahí el proceso?</h2>
+      <p>No siempre.</p>
+      
+      <p><strong>Apelaciones:</strong> Si una parte no está conforme, puede pedir revisión.</p>
+      
+      <p><strong>Ejecución:</strong> Si ganás, hay que hacer cumplir la sentencia: embargos, medidas judiciales, cobro efectivo.</p>
+      
+      <div class="highlight">
+        <p>Ganar un juicio no siempre significa cobrar automáticamente.</p>
+      </div>
+
+      <h2>🚨 Los errores más comunes</h2>
+      <p>Evitar estos errores puede ahorrarte tiempo y dinero:</p>
+      <ul>
+        <li>Esperar demasiado para consultar</li>
+        <li>No guardar pruebas</li>
+        <li>Firmar acuerdos sin asesoramiento</li>
+        <li>Iniciar juicios sin estrategia</li>
+        <li>Elegir soluciones rápidas que perjudican a largo plazo</li>
+      </ul>
+
+      <h2>💡 La clave: actuar rápido y con respaldo profesional</h2>
+      <p>Cada conflicto legal es distinto, pero todos tienen algo en común: <strong>las decisiones del inicio impactan en todo el proceso.</strong></p>
+      
+      <p>Un buen acompañamiento puede:</p>
+      <ul>
+        <li>Acelerar la resolución</li>
+        <li>Reducir costos</li>
+        <li>Evitar juicios innecesarios</li>
+        <li>Mejorar el resultado final</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== BLOG CTA ===== -->
+  <section class="blog-cta">
+    <div class="container">
+      <h2>📞 Consulta gratuita y acompañamiento 24/7</h2>
+      <p>Sabemos que los problemas legales no tienen horario. Por eso, te ofrecemos:</p>
+      <div class="cta-features">
+        <div class="cta-feature"><i class="fa fa-check"></i> Primera consulta sin costo</div>
+        <div class="cta-feature"><i class="fa fa-check"></i> Evaluación clara de tu caso</div>
+        <div class="cta-feature"><i class="fa fa-check"></i> Estrategia personalizada</div>
+        <div class="cta-feature"><i class="fa fa-check"></i> Acompañamiento en todas las etapas</div>
+      </div>
+      <a href="https://wa.me/5491132029063?text=Hola,%20leí%20el%20artículo%20sobre%20conflictos%20legales%20y%20quiero%20consultar%20mi%20caso" target="_blank" class="btn-primary">
+        <i class="fa fa-whatsapp"></i> Contactanos ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/firma-footer.png" alt="Romina Cucarese Abogada">
+          <p>Estudio jurídico comprometido con la excelencia y la defensa de sus derechos. Más de 15 años de experiencia a su servicio.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cucareseromina/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="https://wa.me/5491132029063" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#nosotros">Sobre</a></li>
+            <li><a href="index.html#noticias">Noticias</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#servicios">Derecho de Familia</a></li>
+            <li><a href="index.html#servicios">Derecho Civil</a></li>
+            <li><a href="index.html#servicios">Derecho Laboral</a></li>
+            <li><a href="index.html#servicios">Derecho Penal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5491132029063"><i class="fa fa-whatsapp"></i> +54 9 11 3202-9063</a></li>
+            <li><a href="mailto:Dradoctoracucarese@gmail.com"><i class="fa fa-envelope"></i> Dradoctoracucarese@gmail.com</a></li>
+            <li><a href="index.html#contacto"><i class="fa fa-map-marker"></i> Francisco Álvarez, Buenos Aires</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Romina Cucarese - Abogada. Todos los derechos reservados.</p>
+        <p>Matrícula C.P.A.C.F.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Header scroll
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Mobile menu
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      document.getElementById('navMenu').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
