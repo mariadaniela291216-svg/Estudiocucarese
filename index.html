@@ -267,7 +267,7 @@
         <p class="section-subtitle">Mantenete informado sobre novedades legales y actividades del estudio</p>
       </div>
       <div class="news-grid">
-        <a href="https://www.youtube.com/watch?v=oaKlyEyXqWc" target="_blank" class="news-card reveal">
+        <div class="news-card reveal" data-video="oaKlyEyXqWc">
           <div class="news-image">
             <img src="images/noticia-infama.webp" alt="Romina Cucarese en America TV">
             <div class="news-play"><i class="fa fa-play"></i></div>
@@ -277,8 +277,8 @@
             <h3>Romina Cucarese junto a Romina Rodriguez en America TV</h3>
             <p>La representación de Romina Cucarese en el contexto de una denuncia por violencia y acoso, conoce todos los detalles.</p>
           </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=HZk92TM4-Xs" target="_blank" class="news-card reveal">
+        </div>
+        <div class="news-card reveal" data-video="HZk92TM4-Xs">
           <div class="news-image">
             <img src="images/noticia-burlando.webp" alt="Fernando Burlando con Romina Cucarese">
             <div class="news-play"><i class="fa fa-play"></i></div>
@@ -288,7 +288,7 @@
             <h3>Alejandro Cipolla y Fernando Burlando con Romina Cucarese</h3>
             <p>El abogado de Wanda Nara y Fernando Burlando estuvieron en 2 Reyes Stream junto a la abogada Romina Cucarese. Reviví el stream completo.</p>
           </div>
-        </a>
+        </div>
         <a href="blog-conflicto-legal.html" class="news-card news-card-center reveal">
           <div class="news-image">
             <img src="images/noticia-blog.webp" alt="Tu primer conflicto legal">
@@ -552,6 +552,17 @@
         }, 300);
       }
     }, 3000);
+
+    // YouTube video cards - load player on click
+    document.querySelectorAll('.news-card[data-video]').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function() {
+        const videoId = this.getAttribute('data-video');
+        const imageContainer = this.querySelector('.news-image');
+        imageContainer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        imageContainer.classList.add('news-video-active');
+      });
+    });
   </script>
 
 </body>
